@@ -7,7 +7,7 @@ function timeout(ms) {
 }
 
 /**
- * Fetch transaction mock data with simulated delay. Throws on non-OK response.
+ * Fetch transaction mock data with simulated delay.
  * Options: { delay, fail } - if fail=true, throws an error for testing.
  */
 export async function fetchTransactions({ delay = 250, fail = false } = {}) {
