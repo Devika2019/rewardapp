@@ -1,0 +1,20 @@
+[
+  {"customerId": "cust-001", "transactionId": "t-1001", "amount": 120, "date": "2025-12-05T10:12:00Z"},
+  {"customerId": "cust-001", "transactionId": "t-1002", "amount": 75.5, "date": "2025-11-20T13:45:00Z"},
+  {"customerId": "cust-001", "transactionId": "t-1003", "amount": 45, "date": "2025-10-01T09:21:00Z"},
+  {"customerId": "cust-002", "transactionId": "t-2001", "amount": 200, "date": "2025-12-08T14:30:00Z"},
+  {"customerId": "cust-002", "transactionId": "t-2002", "amount": 99, "date": "2025-11-02T12:00:00Z"},
+  {"customerId": "cust-003", "transactionId": "t-3001", "amount": 52, "date": "2025-12-01T08:00:00Z"},
+  {"customerId": "cust-004", "transactionId": "t-4001", "amount": 150.75, "date": "2024-06-20T15:00:00Z"},
+  {"customerId": "cust-005", "transactionId": "t-5001", "amount": 49.99, "date": "2023-09-10T10:30:00Z"},
+  {"customerId": "cust-006", "transactionId": "t-6001", "amount": 120.5, "date": "2025-11-15T09:00:00Z"},
+  {"customerId": "cust-007", "transactionId": "t-7001", "amount": 64, "date": "2022-12-25T11:00:00Z"},
+  {"customerId": "cust-008", "transactionId": "t-8001", "amount": 101, "date": "2025-12-02T16:00:00Z"},
+  {"customerId": "cust-009", "transactionId": "t-9001", "amount": 220, "date": "2021-07-12T18:00:00Z"},
+  {"customerId": "cust-010", "transactionId": "t-10001", "amount": 88, "date": "2025-10-10T11:30:00Z"},
+  {"customerId": "cust-011", "transactionId": "t-11001", "amount": 130, "date": "2025-11-22T10:15:00Z"},
+  {"customerId": "cust-012", "transactionId": "t-12001", "amount": 49.5, "date": "2025-12-09T12:22:00Z"},
+  {"customerId": "cust-013", "transactionId": "t-13001", "amount": 70, "date": "2021-03-03T09:00:00Z"},
+  {"customerId": "cust-014", "transactionId": "t-14001", "amount": 250, "date": "2025-10-30T19:00:00Z"},
+  {"customerId": "cust-015", "transactionId": "t-15001", "amount": 110, "date": "2025-11-11T07:00:00Z"}
+]
