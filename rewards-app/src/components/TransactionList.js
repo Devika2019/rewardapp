@@ -10,9 +10,33 @@ const Container = styled.div`
 const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
-  th, td { padding: ${({ theme }) => theme.spacing(0.5)}; border-bottom: 1px solid ${({ theme }) => theme.colors.border}; }
-  tbody tr:hover { background: ${({ theme }) => theme.colors.muted}; }
+
+  th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.textMuted};
+    padding-bottom: 6px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  }
+
+  td {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  tbody tr:hover {
+    background: ${({ theme }) => theme.colors.muted};
+  }
 `;
+
+const Pagination = styled.div`
+  margin-top: ${({ theme }) => theme.spacing(1)};
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+`;
+
 
 export default function TransactionList({ transactions, pageSize = 5 }) {
   const [page, setPage] = useState(0);
@@ -63,12 +87,7 @@ TransactionList.propTypes = {
   pageSize: PropTypes.number,
 };
 
-const Pagination = styled.div`
-  margin-top: ${({ theme }) => theme.spacing(1)};
-  display: flex;
-  gap: ${({ theme }) => theme.spacing(1)};
-  align-items: center;
-`;
+
 
 const PageIdx = styled.span`
   margin: 0 8px;
