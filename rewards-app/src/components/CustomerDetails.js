@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import TransactionList from './TransactionList';
@@ -56,6 +56,9 @@ const MonthButton = styled.button`
 
 export default function CustomerDetails({ customerId, monthlyMap }) {
   const [selectedMonthKey, setSelectedMonthKey] = useState(null);
+  useEffect(() => {
+    setSelectedMonthKey(null);
+  }, [customerId]);
   const keys = useMemo(() => Array.from(monthlyMap.keys()).sort().reverse(), [monthlyMap]);
   const total = useMemo(() => {
     let s = 0; monthlyMap.forEach((v) => s += v.points); return s;
