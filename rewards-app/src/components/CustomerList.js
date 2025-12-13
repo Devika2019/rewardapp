@@ -3,21 +3,46 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  border-right: 1px solid ${({ theme }) => theme.colors.border};
-  padding-right: ${({ theme }) => theme.spacing(1)};
   min-width: 260px;
+  padding: ${({ theme }) => theme.spacing(2)};
   background: ${({ theme }) => theme.colors.background};
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
 const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
-  th, td { padding: ${({ theme }) => theme.spacing(0.5)}; border-bottom: 1px solid ${({ theme }) => theme.colors.border}; }
+
+  th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 6px;
+    color: ${({ theme }) => theme.colors.textMuted};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  }
+
+  td {
+    padding: 8px 4px;
+    font-size: 14px;
+  }
 `;
 
 const Row = styled.tr`
   cursor: pointer;
   background: ${(p) => (p.selected ? p.theme.colors.muted : 'transparent')};
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.muted};
+  }
+`;
+
+const Pagination = styled.div`
+  margin-top: ${({ theme }) => theme.spacing(1)};
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
 `;
 
 export default function CustomerList({ customerSummaries, onSelectCustomer, selectedCustomerId, pageSize = 6 }) {
@@ -64,12 +89,6 @@ CustomerList.propTypes = {
   pageSize: PropTypes.number,
 };
 
-const Pagination = styled.div`
-  margin-top: ${({ theme }) => theme.spacing(1)};
-  display: flex;
-  gap: ${({ theme }) => theme.spacing(1)};
-  align-items: center;
-`;
 
 const PageIdx = styled.span`
   margin: 0 8px;
