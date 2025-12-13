@@ -9,6 +9,8 @@ import styled from 'styled-components';
 
 const Page = styled.div`
   padding: ${({ theme }) => theme.spacing(2)};
+    display: flex;
+  justify-content: center;
 `;
 
 const Message = styled.div`
@@ -18,6 +20,10 @@ const Message = styled.div`
 const AppContainer = styled.div`
   display: flex;
   gap: 12px;
+`;
+const Content = styled.div`
+  width: 100%;
+  max-width: 1200px;   /* adjust as needed */
 `;
 
 function App() {
@@ -79,12 +85,14 @@ function App() {
 
   return (
     <Page>
-      <h1>Rewards Program Dashboard</h1>
+       <Content>
+      <h1 style={{ textAlign: 'center' }}>Rewards Program Dashboard</h1>
       <MonthYearFilter month={monthFilter} year={yearFilter} lastThree={lastThree} onMonthChange={setMonthFilter} onYearChange={setYearFilter} onLastThreeChange={setLastThree} />
       <AppContainer>
         <CustomerList customerSummaries={customerSummaries} selectedCustomerId={selectedCustomer} onSelectCustomer={(id) => { logger.info({ id }, 'App: select customer'); setSelectedCustomer(id); }} />
         <CustomerDetails customerId={selectedCustomer} monthlyMap={filteredMonthlyMap} />
       </AppContainer>
+      </Content>
     </Page>
   );
 }
