@@ -50,6 +50,8 @@ A small React application to view customers and their reward points. Bootstrappe
 1. Fork the repo
 2. Create a feature branch
 3. Open a PR with a clear description
+## Screenshots
+<img width="1278" height="520" alt="image" src="https://github.com/user-attachments/assets/9915a172-bfa8-4655-b4e7-bcd16444b3f6" />
 
 ## License
 
