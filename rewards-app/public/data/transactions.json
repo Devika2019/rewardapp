@@ -1,9 +1,7 @@
 [
   {"customerId": "cust-001", "transactionId": "t-1001", "amount": 120, "date": "2025-12-05T10:12:00Z"},
   {"customerId": "cust-001", "transactionId": "t-1002", "amount": 75.5, "date": "2025-11-20T13:45:00Z"},
-  {"customerId": "cust-001", "transactionId": "t-1003", "amount": 45, "date": "2025-10-01T09:21:00Z"},
-  {"customerId": "cust-001", "transactionId": "t-1002", "amount": 75.5, "date": "2025-10-20T13:45:00Z"},
-  {"customerId": "cust-001", "transactionId": "t-1002", "amount": 130, "date": "2025-10-20T13:45:00Z"},
+  {"customerId": "cust-001", "transactionId": "t-1003", "amount": 45, "date": "2025-10-01T09:21:00Z"},  
   {"customerId": "cust-002", "transactionId": "t-2001", "amount": 200, "date": "2025-12-08T14:30:00Z"},
   {"customerId": "cust-002", "transactionId": "t-2002", "amount": 99, "date": "2025-11-02T12:00:00Z"},
   {"customerId": "cust-003", "transactionId": "t-3001", "amount": 52, "date": "2025-12-01T08:00:00Z"},
