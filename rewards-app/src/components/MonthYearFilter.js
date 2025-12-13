@@ -5,10 +5,27 @@ import { MONTHS, YEARS } from '../constants';
 
 const Container = styled.div`
   display: flex;
-  gap: 8px;
+  justify-content: center;
+  gap: 12px;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-radius: 8px;
+  background: ${({ theme }) => theme.colors.background};
+
+  label {
+    font-size: 14px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  select {
+    padding: 4px 6px;
+  }
 `;
+
 
 export default function MonthYearFilter({ month, year, lastThree, onMonthChange, onYearChange, onLastThreeChange }) {
   return (
